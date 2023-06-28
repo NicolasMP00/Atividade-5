@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #000000, #210707, #000000);
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+
+ul {
+    padding-left: 20px;
+}
+
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contact-info {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 5px;
+}
+
+.education-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.education-list li {
+    margin-bottom: 10px;
+}
+
+.experience-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.experience-list li {
+    margin-bottom: 20px;
+}
+
+.experience-list ul {
+    margin-top: 5px;
+}
+
+/* Estilos da lista de habilidades */
+.skills-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #5f0b0b;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#contagem {
+    color: red;
+    font-weight: 600;
+}
+
+#img-h {
+    height: 20vh;
+    border-radius: 50%;
+}
+
+#redes {
+    height: 6vh;
+    padding: 1% 0.4% 0%;
+}

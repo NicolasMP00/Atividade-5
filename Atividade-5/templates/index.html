@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/5551998384142?text=Adorei%20seu%20artigo" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#5f0b0b;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #88888800;
+  z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+    <!--  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="/Atividade-5/static/main.css">
+    <script>
+        function getAccessCount() {
+            fetch('/access_count')
+                .then(response => response.json())
+                .then(data => {
+                    const countElement = document.getElementById("access_count");
+                    countElement.textContent = data.count;
+                })
+                .catch(error => {
+                    console.log('Erro ao obter a contagem de acessos:', error);
+                });
+        }
+
+        window.addEventListener('load', getAccessCount);
+
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <img id="img-h" src="{{ url_for('static', filename='imagens/1687906989286.jpg') }}">
+        <h1>Nicolas Martins Pereira</h1>
+        <!-- <h2></h2> -->
+        <ul class="contact-info">
+            <li>Email: nicolaspereira@sou.faccat.br</li>
+            <li>Telefone: (51) 99838-4142</li>
+        </ul>
+        <a href="https://www.instagram.com/nicolasmp_/"><img id="redes"
+                src="{{ url_for('static', filename='imagens/logo-instagram-png-fundo-transparente.webp') }}"></a>
+        <a href="https://www.facebook.com/nicolas.martinspereira/"><img id="redes"
+                src="{{ url_for('static', filename='imagens/Facebook_f_logo_(2019).svg.webp') }}"></a>
+        <a href="https://www.linkedin.com/in/nicolas-pereira--/"><img id="redes"
+                src="{{ url_for('static', filename='imagens/174857.png') }}"></a>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Contagem atual de acessos:</h2>
+            <a id="contagem">
+                <p id="access_count">Carregando...</p>
+            </a>
+        </section>
+        <section>
+            <h3>Sobre</h3>
+            <p> Entusiasta de tecnologia apaixonado por desafios e aprendizado contínuo. Sou um profissional em início
+                de
+                carreira na
+                área de Tecnologia da Informação (TI), dedicado a explorar as complexidades e as inovações que
+                impulsionam o mundo
+                digital.
+
+                Cursando Sistemas da informação pela Faccat, adquiri uma base sólida em conceitos fundamentais de TI,
+                incluindo
+                programação e banco de dados. Minhas experiências acadêmicas e projetos práticos me permitiram
+                desenvolver habilidades
+                técnicas essenciais e uma mentalidade analítica.
+
+                Estou sempre em busca de oportunidades para expandir meus conhecimentos e habilidades, buscando me
+                manter atualizado
+                sobre as últimas tendências e tecnologias emergentes. Tenho interesse especial em programação e redes, e
+                estou ansioso
+                para contribuir com soluções inovadoras que impulsionem o sucesso das empresas.
+
+                Como um colaborador pró-ativo e comunicativo, acredito firmemente na importância do trabalho em equipe e
+                na colaboração
+                eficaz. Estou confiante em minhas habilidades de comunicação e capacidade de explicar conceitos técnicos
+                de forma clara
+                e acessível para pessoas com diferentes níveis de experiência.
+
+                Estou em busca de oportunidades de trabalho em TI, onde possa aplicar meu conhecimento e crescer
+                profissionalmente. Se
+                você está procurando um membro dedicado e apaixonado para sua equipe, estou pronto para enfrentar novos
+                desafios e
+                contribuir para o sucesso da sua organização.
+
+                Se você deseja conectar-se, discutir oportunidades de colaboração ou compartilhar conhecimentos,
+                sinta-se à vontade para
+                entrar em contato comigo. Estou ansioso para ampliar minha rede de contatos profissionais e aprender com
+                profissionais
+                experientes em TI.</p>
+        </section>
+
+        <section>
+            <h3>Educação</h3>
+            <ul class="education-list">
+                <center>
+                    <li>
+                        <h4>Sistemas da Informação</h4>
+                        <p>Faccat</p>
+                        <p>2019 - Cursando</p>
+                    </li>
+                </center>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Experiência Profissional</h3>
+            <ul class="experience-list">
+                <li>
+                    <h4>CMNDigital</h4>
+                    <p>Web Designer</p>
+                    <p>01/07/2022 - 05/11/2022</p>
+                    <ul>
+                        <li>Criação de paginas/sites para empresas</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Habilidades</h3>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>C</li>
+                <li>SQL</li>
+                <li>Inglês</li>
+                <li>HTML/CSS</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
